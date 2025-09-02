@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Liam Gray</title>
+</head>
+
+<body>
+  <div class="theme-panel">
+    <div class="theme-body">
+      <span>Change Theme</span>
+      <div class="btn-group">
+        <button data-toggle="light" class="switcher-btn active">Light</button>
+        <button data-toggle="dark" class="switcher-btn">Dark</button>
+      </div>
+      <button class="theme-tab">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    </div>
+  </div>
+  <main class="site-wrapper">
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="brand-logo">
+          <div class="logo">
+            <h2>L.G</h2>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <ul class="ul-defaults.none main-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item" data-open="about">About Me</li>
+            <li class="nav-item" data-open="contact">Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+      <div class="container">
+        <div class="hero-content">
+          <div class="code-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h2 class="header-lg">I'm Liam Gray</h2>
+          <div class="sub-header">I create meaningful solutions for your brands and products.
+            <br>
+            Give your customers the best experience possible.
+          </div>
+          <div class="btn btn-primary round-pill">
+            <a href="#" data-open="contact">Let's talk now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container search-container">
+        <label for="search">
+          <input autocomplete="off" id="search" type="text" class="search-input" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </label>
+        <ul class="portfolio-filter-nav ul-default-none">
+          <li data-filter="all" class="filter-link active">All Work</li>
+          <li data-filter="web" class="filter-link">Web Development</li>
+          <li data-filter="app" class="filter-link">App Development</li>
+          <li data-filter="ui" class="filter-link">UI Design</li>
+        </ul>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-item="web" data-open="web-1">
+          <div class="card-body">
+            <img src="./assets/images/marketing-site.jpeg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>Web Development</div>
+              <h3>Marketing Agency Website</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="web" data-open="web-2">
+          <div class="card-body">
+            <img src="./assets/images/minimalist-site.jpeg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>Web Development</div>
+              <h3>Responsive Site</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="web" data-open="web-3">
+          <div class="card-body">
+            <img src="./assets/images/SAAS-site.jpeg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>Web Development</div>
+              <h3>SAAS Landing Page</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="ui" data-open="ui-1">
+          <div class="card-body">
+            <img src="./assets/images/portfolio-4.jpg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>UI Development</div>
+              <h3>Cool Design</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="app" data-open="app-1">
+          <div class="card-body">
+            <img src="./assets/images/portfolio-5.jpg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>App Development</div>
+              <h3>Game App</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="app" data-open="app-2">
+          <div class="card-body">
+            <img src="./assets/images/portfolio-6.jpg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>App Development</div>
+              <h3>Gambling App</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="app" data-open="app-3">
+          <div class="card-body">
+            <img src="./assets/images/portfolio-7.jpg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>App Development</div>
+              <h3>Money App</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-item="ui" data-open="ui-2">
+          <div class="card-body">
+            <img src="./assets/images/portfolio-8.jpg" alt="portfolio icon">
+            <div class="card-popup-box">
+              <div>UI Design</div>
+              <h3>Fantastic Design</h3>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="portfolio-container"></div> -->
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="review-title">What People Say</div>
+      <h2 class="header-med">Trusted By Clients</h2>
+      <div class="review-preview">
+        <img src="./assets/images/cube.png" alt="cube">
+      </div>
+      <div class="review-carousel">
+        <div class="review-item active">
+          <div class="review-text">
+            #1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quo quam accusantium adipisci repellat
+            ullam quis quasi magni laudantium quia.
+          </div>
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+            <div class="details">
+              <div class="name">Jason Brewer</div>
+              <div class="company">State World Wide</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-item prev">
+          <div class="review-text">
+            #2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quo quam accusantium adipisci repellat
+            ullam quis quasi magni laudantium quia.
+          </div>
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+            <div class="details">
+              <div class="name">James Brewer</div>
+              <div class="company">Race World Wide</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-item next">
+          <div class="review-text">
+            #3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quo quam accusantium adipisci repellat
+            ullam quis quasi magni laudantium quia.
+          </div>
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+            <div class="details">
+              <div class="name">Jane Brewer</div>
+              <div class="company">Lacrosse World Wide</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="review-text">
+            #4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quo quam accusantium adipisci repellat
+            ullam quis quasi magni laudantium quia.
+          </div>
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+            <div class="details">
+              <div class="name">Scott Brewer</div>
+              <div class="company">Football World Wide</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-control-container">
+        <button>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- About Page Modal -->
+    <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
+      <div class="container-fluid">
+        <header class="modal-header">
+          <h3>ABOUT PAGE</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="image-wrapper">
+            <img src="./assets/images/me.png" alt="">
+          </div>
+          <div class="about-text">
+            <h2 class="header-med">Liam Gray</h2>
+            <p>Full Stack Developer based in Alabama, USA. Nobody can see how elegant my code is...so I snapshot it,
+              frame it, and hang it on my wall.</p>
+            <p>I write code like I diet - lean. jk. It's more like Taco Bell Beefy 5 Layer Burritos...which is still
+              leaner than some other foods.</p>
+            <div class="contact-me-block">
+              <div>Email Me</div>
+              <a href="mailto:grayliam1996@gmail.com">grayliam1996@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-codepen"></i></li>
+            <li><i class="fab fa-dev"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-vuejs"></i></li>
+            <li><i class="fab fa-angular"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fab fa-aws"></i></li>
+            <li><i class="fab fa-docker"></i></li>
+            <li><i class="fab fa-android"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Contact page modal -->
+    <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
+      <div class="container-fluid">
+        <header class="modal-header">
+          <h3>CONTACT PAGE</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="contact-text">
+            <h2 class="header-med">Liam Gray</h2>
+            <div>Have a project or question? Send me a message</div>
+            <div>I will reply within 48 hours</div>
+          </div>
+          <form class="folio-form">
+            <input class="form-control" name="name" type="text" placeholder="Name">
+            <input class="form-control" name="email" type="email" placeholder="Email">
+            <input class="form-control" name="subject" type="text" placeholder="Subject">
+            <textarea class="form-control" name="message" cols="30" rows="3"
+              placeholder="Write your message"></textarea>
+            <input type="submit" value="Send" class="btn btn-primary round-pill">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modals -->
+    <div id="web-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Web Project 1</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/marketing-site.jpeg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Marketing Website</strong></p>
+            <p>Designed from WIX, I published a multi-page site for a co-workers new marketing agency.</p>
+            <a href="https://cbellsales83.wixsite.com/free-state-media-g-1" target="_blank">Check out the site here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="web-2" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Web Project 2</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/minimalist-site.jpeg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My First Responsive Website</strong></p>
+            <p>Built this as a project for Devslopes Academy, used HTML, CSS, and Figma to create this.</p>
+            <a href="portfolio-projects/css-responsive-website-solved" target="_blank">Check out the site here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="web-3" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Web Project 3</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/SAAS-site.jpeg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>SAAS Website</strong></p>
+            <p>SAAS landing page I built for a Devslopes Project, also using HTML, CSS, and Figma</p>
+            <a href="./portfolio-projects/css-final-project-saas-solved/" target="_blank">Check out the site here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ui-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>UI Project 1</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/portfolio-4.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My first awesome website</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque amet maxime possimus nam
+              accusamus
+              quaerat. Sunt soluta quas praesentium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima eligendi aut quidem numquam
+              totam debitis possimus id doloribus nesciunt!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>App Project 1</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/portfolio-5.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My first awesome website</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque amet maxime possimus nam
+              accusamus
+              quaerat. Sunt soluta quas praesentium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima eligendi aut quidem numquam
+              totam debitis possimus id doloribus nesciunt!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app-2" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>App Project 2</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/portfolio-6.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My first awesome website</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque amet maxime possimus nam
+              accusamus
+              quaerat. Sunt soluta quas praesentium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima eligendi aut quidem numquam
+              totam debitis possimus id doloribus nesciunt!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app-3" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>App Project 3</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/portfolio-7.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My first awesome website</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque amet maxime possimus nam
+              accusamus
+              quaerat. Sunt soluta quas praesentium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima eligendi aut quidem numquam
+              totam debitis possimus id doloribus nesciunt!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ui-2" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>UI Project 2</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/portfolio-8.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My first awesome website</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque amet maxime possimus nam
+              accusamus
+              quaerat. Sunt soluta quas praesentium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima eligendi aut quidem numquam
+              totam debitis possimus id doloribus nesciunt!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>

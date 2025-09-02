@@ -1,0 +1,545 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 0 30px;
+  height: 86px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 237, 238);
+  z-index: 10;
+}
+
+.topSection {
+  background-image: url(/assets/bg/background-top.svg);
+}
+
+.frontLogo {
+  height: 46.1px;
+  width: 154.9px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+  padding: 8px 8px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.playButton {
+  width: 137px;
+}
+
+.button {
+  background-color: #2476ff;
+  color: white;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-size: 12px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 150px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  justify-content: center;
+}
+
+.introText {
+  width: 25%;
+  position: relative;
+  top: 20px;
+}
+
+.introText h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.introText p {
+  font-size: 18px;
+  color: gray;
+  font-weight: 500;
+}
+
+.introTextLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 80%;
+  padding-top: 30px;
+}
+
+.introTextLinks a {
+  text-decoration: none;
+}
+
+#lM {
+  color: #2476ff;
+}
+
+.asana {
+  position: relative;
+  top: 30px;
+  left: 500px;
+  animation: asana 0.9s 0.1s linear;
+}
+
+.atlass {
+  position: relative;
+  top: 28px;
+  left: 200px;
+  animation: atlass 0.75s 0.1s linear;
+}
+
+.cal {
+  position: relative;
+  top: 350px;
+  left: 300px;
+  animation: cal 0.85s 0.1s linear;
+}
+
+.gA {
+  position: relative;
+  top: 300px;
+  left: -60px;
+  animation: gA 0.75s 0.1s linear;
+}
+
+.google {
+  position: relative;
+  top: 40px;
+  right: 200px;
+  animation: google 1s 0.1s linear;
+}
+
+.pP {
+  position: relative;
+  top: 200px;
+  right: 350px;
+  animation: pP 1s 0.1s linear;
+}
+
+.weave {
+  position: relative;
+  top: 175px;
+  right: 50px;
+  animation: weave 0.75s 0.1s linear;
+}
+
+.asana,
+.atlass,
+.cal,
+.weave,
+.pP {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: 10px white;
+  border-radius: 80px;
+  padding: 10px;
+}
+
+.gA,
+.google {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 10px white;
+  border-radius: 80px;
+  padding: 10px;
+}
+
+.testLine {
+  width: 90%;
+  height: 1px;
+  background-color: lightgray;
+  margin: 10px auto;
+}
+
+.testBullet {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  gap: 5px;
+}
+
+.pricingLine-test {
+  width: 95%;
+  height: 1px;
+  background-color: lightgray;
+  margin: 10px auto;
+}
+
+.testText {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.descHeader,
+.pricingHeader {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+.descHeader h2,
+.pricingHeader h2 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.descHeader p,
+.pricingHeader p {
+  color: gray;
+}
+
+.circle {
+  min-width: 6px;
+  height: 6px;
+  background-color: #2476ff;
+  border: 20px solid #ecf2ff;
+  border-radius: 30px;
+}
+
+.line {
+  height: 1px;
+  width: 83px;
+  background-color: #ecf2ff;
+}
+
+.chartTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.pricingChart {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  box-shadow: 0 3px 3px 3px lightgray;
+  padding: 30px;
+}
+
+.priceBoxNo hr {
+  color: black;
+  height: 1px;
+  width: 90%;
+}
+
+.priceBoxNo {
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  gap: 10px;
+}
+
+.priceBoxNo h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.priceBoxNo p {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.pricingLine {
+  width: 95%;
+  height: 1px;
+  background-color: gray;
+  margin: 10px auto;
+}
+
+.pricePolicy {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.priceTable {
+  width: 564px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.priceTable > div {
+  display: flex;
+  flex-direction: column;
+  width: 227px;
+}
+
+.priceTable p {
+  color: gray;
+}
+
+.sketch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sketch > span {
+  background-color: #01c9a7;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  color: white;
+}
+
+.cA p,
+.mB p,
+.HoC p,
+.iI p {
+  margin-top: 0;
+}
+
+.HoC img,
+.iI img,
+.cA img,
+.mB img {
+  width: 50px;
+  height: 50px;
+}
+
+.hireUs {
+  background-color: #20335b;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.hireFlex {
+  width: 40%;
+}
+
+.hireFlex hr {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer h4 {
+  margin-bottom: 0;
+}
+
+.reviewerTitle {
+  margin-top: 5px;
+}
+
+.reviewer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.hireHeader p,
+.reviewerTitle {
+  color: gray;
+}
+
+.hireForm {
+  background-color: white;
+  color: black;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.hireForm h4 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.hireForm > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input::placeholder,
+select::placeholder {
+  padding-left: 5px;
+}
+
+.formName,
+.formSelect {
+  display: flex;
+  gap: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  height: 44px;
+  padding: 0;
+}
+
+textarea {
+  height: 150px;
+}
+
+.checkBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: gray;
+  gap: 20px;
+}
+
+.checkBox input {
+  width: 25px;
+  height: 25px;
+}
+
+form > div {
+  width: 90%;
+}
+
+.privacyPolicy {
+  text-align: center;
+  text-decoration: underline dotted;
+  color: #677788;
+}
+
+footer {
+  margin: -100px 0 0 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address,
+.phoneNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.footerContact i {
+  color: #677788;
+}
+
+.address {
+  color: #677788;
+}
+
+.phoneNumber {
+  color: #2576ff;
+}
+
+.otherLinks {
+  display: flex;
+  gap: 100px;
+}
+
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footerlinks a {
+  color: gray;
+}
+
+.hiring {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 18.5px;
+}
+
+.hiring > span {
+  background-color: #2576ff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: white;
+}
